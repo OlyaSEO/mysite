@@ -1,0 +1,330 @@
+html {overflow-x:hidden;}
+body{
+ background-position:top ;   
+ background-repeat: no-repeat;              
+ background-color: white;
+ height: 100%; margin: 0; padding: 0; /*убирает отсtуты по всей странице*/
+ }
+#up{
+	text-align:center;
+width:100%;
+position: relative;
+right: 0;
+left: 0;
+margin: auto;
+}
+#tel{
+	color:white;	
+	position: relative;
+	text-align: right;
+	top:-30px;
+	right: 20px;
+	font-size:24px;
+	font-family: 'Poiret One', cursive;
+}
+#telimg{
+position: relative;
+float:right;
+top:5px;
+right:210px;
+}
+
+#inst{
+left:20px;
+position: relative;
+top:5px;
+}
+#vk{
+	left:30px;
+	position: relative;
+	top:5px;
+	}
+#menuland {
+text-align:center;
+width:100%;
+height:60px;
+top:-24px;
+position: relative;
+background-color:white;
+opacity:0.2;
+}
+#main{
+text-align:center;
+width:100%;
+position: relative;
+top: -74px;
+right: 0;
+left: 0;
+margin: auto;
+}
+
+.punkt a {
+	display:inline-block;
+	margin:10px 30px 10px 30px;
+	color:white;
+	font-size:16px;
+	font-family: 'Poiret One', cursive;
+	text-decoration: none;
+}
+.punkt  :hover {
+color:black;
+cursor:pointer;
+text-decoration: none;
+}
+
+#pctext3 {
+	text-align:center;
+	position: relative;
+    margin-top: 210px;
+    margin-right: auto;
+	color:white;
+	font-size:28px;
+	font-family: 'Poiret One', cursive;
+}
+#pctext4 {
+	text-align:center;
+	position: relative;
+    margin-top: 30px;
+    margin-right: auto;
+	color:white;
+	font-size:22px;
+	font-family: 'Poiret One', cursive;
+	opacity:0.7;
+}
+
+.p1 {
+	min-width: 100%;
+	text-align:center;
+	position: relative;
+    top: 110px;
+    right: 0;
+    left: 0;
+    margin: auto;
+	border:1px solid transparent;
+}
+.circle {
+display:inline-block;
+margin:0 50px 0 50px;
+}
+#ef{
+	position: relative;
+    top: 650px;
+    right: 0;
+    left: 163px;
+    margin: auto;
+}
+#et{
+	position: relative;
+    top: 650px;
+    right: 0;
+    left: 335px;
+    margin: auto;
+}
+#rs{
+	position: relative;
+    top: 650px;
+    right: 0;
+    left: 440px;
+    margin: auto;
+}
+	
+p {
+	margin:0 0 0 0px;
+}
+.one{
+float:bottom;
+margin-top:20px;
+margin-bottom:0px;
+}
+span {
+	border:1px solid transparent;
+    color:#929391;
+	font-size:22px;
+	font-weight:100;
+	font-family: 'Poiret One', cursive;
+}
+span:hover{
+	color:black;
+	cursor:pointer;
+}
+#video {
+text-align:center;
+margin-top:640px;
+overflow:hidden;
+margin-left:-10px;	
+margin-right:-10px;	
+}
+#videospan{
+	display:inline-block;
+	left:300px;
+	position: relative;
+}
+#text{
+	position:relative;
+	top:610px;
+	height: 300px;
+	float:left;
+	font-family: 'Poiret One', cursive;
+	color:#b5b6b4;
+	line-height:60px;
+	text-align:justify;
+}
+h1 {
+	word-spacing:20px;
+}
+#slider {
+	position:relative;
+	text-align: center;
+	top: 500px;
+	margin:0 auto;
+}
+
+#slides article {/*изображения справа друг от друга*/
+  width:10%;/* ширина наложения имг лруг на друга!*/
+  float:left;
+}
+#slides .image{
+	width: 1000%;/* ширина наложения имг лруг на друга!*/
+	line-height:5;
+}
+#overflow{
+	width:100%;
+	overflow: hidden;
+}
+article img{
+	width:900px;
+}
+#desktop:checked ~ #slider{
+	max-width: 1000px;
+}
+#switch1:checked ~ #controls label:nth-child(7),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4),
+#switch6:checked ~ #controls label:nth-child(5),
+#switch7:checked ~ #controls label:nth-child(6){
+  background: url('prev.png') no-repeat;
+  float: left;
+  margin: -130px 0 0 -80px;
+  display: block;
+  height: 68px;
+  width: 68px;
+  }
+  
+  /*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(6),
+#switch6:checked ~ #controls label:nth-child(7),
+#switch7:checked ~ #controls label:nth-child(1){
+	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: -130px -80px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+  label:hover{
+	  cursor:pointer;
+  }
+  .all input{
+	  display: none;
+  }
+  #switch1:checked ~ #slides .image{
+	  margin-left: 0;
+  }
+  
+  #switch2:checked ~ #slides .image{
+	  margin-left: -100%;
+  }
+  
+  #switch3:checked ~ #slides .image{
+	  margin-left: -200%;
+  }
+  
+  #switch4:checked ~ #slides .image{
+	  margin-left: -300%;
+  }
+  
+  #switch5:checked ~ #slides .image{
+	  margin-left: -400%;
+  }
+  #switch6:checked ~ #slides .image{
+	  margin-left: -500%;
+  }
+  #switch7:checked ~ #slides .image{
+	  margin-left: -600%;
+  }
+  
+  #controls{
+	  margin: -25% 0 0 0;
+	  width: 100%;
+	  height: 50%;
+  }
+  #active label {
+	  border-radius:10px;
+	  display: inline-block;
+	  width: 15px;
+	  height:15px;
+	  background: #bbb;
+  }
+  #active{
+	  margin:23% 0 0;
+	  text-align:center;
+  }
+  #active label:hover{
+	  background: #76c8ff;
+	  border-color: #777 !important;
+  }
+  
+  #switch1:checked ~ #active label:nth-child(1),
+  #switch2:checked ~ #active label:nth-child(2),
+  #switch3:checked ~ #active label:nth-child(3),
+  #switch4:checked ~ #active label:nth-child(4),
+  #switch5:checked ~ #active label:nth-child(5),
+  #switch6:checked ~ #active label:nth-child(6),
+  #switch7:checked ~ #active label:nth-child(7){
+	  background: #18a2dd;
+	  border-color: #18a3dd !important;
+  }
+  
+  #slides .image{
+	  transition: all 1700ms cubic-bezier(0.500,0.000, 0.100, 1.000);
+  }
+  #controls label:hover{
+	  opacity:0.6;
+  }
+  #controls label{
+	  transition: opacity 0.2s ease-out;
+  }
+  
+  
+ .footer{
+	 width:100%;
+	 height:70px;
+	 background-color:#b5b6b4;
+	 opacity:0.7;
+	 position:relative;
+	 top:180px;
+   margin-left:0;
+   margin-right:0;
+ }
+ #foot{
+text-align:center;
+width:100%;
+position: relative;
+bottom: -15px;
+ }
+ #foot{
+	 font-size:16px;
+	 font-family: 'Poiret One', cursive;
+	 color:black;
+	 display:inline-block;
+ }
+.footer span{
+	cursor:text;
+}
